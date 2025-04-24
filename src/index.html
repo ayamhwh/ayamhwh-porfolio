@@ -1,5 +1,145 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Alexander Bandong</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    h1 span {
+      color: #f43f5e;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #f43f5e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #e11d48;
+    }
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      margin-right: 12px;
+      color: white;
+      text-decoration: none;
+    }
+    .social a:hover {
+      color: gray;
+    }
+    .right img {
+      max-width: 100%;
+      border-radius: 9999px;
+      display: block;
+      margin: auto;
+    }
+    .expert-section {
+      margin-top: 40px;
+      grid-column: span 2;
+    }
+    .expert-section p {
+      color: #f97316;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    .expert-section h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    .expert-section .description {
+      color: #9ca3af;
+      margin-top: 16px;
+      max-width: 600px;
+    }
+    .cv-link {
+      color: #f97316;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 12px;
+    }
+    .cv-link:hover {
+      text-decoration: underline;
+    }
+    .chat-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #111;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      color: #22c55e;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <h1>Hi, I’m <span>Alexander William A Bandong</span></h1>
+      <p>Computer Science Student</p>
+      <div class="social">
+        <a href="URL">
+            <img src="facebook.png" alt="facebook">
+        </a>
+        <a href="#">t</a>
+        <a href="#">i</a>
+        
+      </div>
+    </div>
+
+    <div class="right">
+      <img src="Alexander.jpg" alt="Profile" />
+    </div>
+
+    <div class="expert-section">
+      <p>Expert on</p>
+      <h2>Based in Netherland<br>i’m developer and UI/UX designer.</h2>
+      <p class="description">
+        Hey are looking for designer to build your brand and grow your business?
+        let’s shake hands with me.
+      </p>
+      <a href="Tazrin_CV.pdf" class="cv-link">Download CV</a>
+    </div>
+  </div>
+
+  <div class="chat-btn">
+    💬 Let’s Chat
+  </div>
+
+</body>
+</html>
